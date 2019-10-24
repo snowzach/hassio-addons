@@ -1,0 +1,47 @@
+{
+  "name": "DOODS",
+  "version": "1",
+  "slug": "doods",
+  "description": "Distributed Open Object Detection Service",
+  "arch": ["armhf","armv7","amd64"],
+  "startup": "before",
+  "boot": "auto",
+  "map": ["share"],
+  "options": {
+    "server": {
+      "port": "8080"
+    },
+    "auth_key": "",
+    "doods.detectors": [
+      {
+        "name": "default", 
+        "type": "tflite",  
+        "modelFile": "/opt/doods/models/coco_ssd_mobilenet_v1_1.0_quant.tflite", 
+        "labelFile": "/opt/doods/models/coco_labels0.txt",
+        "numThreads": 1,
+        "numConcurrent": 1,
+        "hwAccel": false
+      }
+    ]
+  },
+  "schema": {
+    "server": {
+      "port": "port?"
+    },
+    "doods.detectors": [
+        {
+          "name": "str", 
+          "type": "str",
+          "modelFile": "str", 
+          "labelFile": "str?",
+          "numThreads": "int?",
+          "numConcurrent": "int?",
+          "hwAccel": "bool?"
+        }
+    ],
+    "auth_key": "str?"
+  },
+  "ports": {
+    "8080/tcp": 8080
+  }
+}
