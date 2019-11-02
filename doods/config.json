@@ -1,6 +1,6 @@
 {
   "name": "DOODS",
-  "version": "1",
+  "version": "2",
   "slug": "doods",
   "description": "Distributed Open Object Detection Service",
   "arch": [

@@ -1,0 +1,49 @@
+{
+  "name": "RTS2P",
+  "version": "1",
+  "slug": "rts2p",
+  "description": "RTSP Proxy Server",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64"
+  ],
+  "startup": "before",
+  "boot": "auto",
+  "map": [
+    "share"
+  ],
+  "options": {
+    "server": {
+      "port": "5554",
+      "username": "myusername",
+      "password": "mypassword"
+    },
+    "streams": [
+      {
+        "url": "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
+        "name": "test",
+      }
+    ]
+  },
+  "schema": {
+    "server": {
+      "port": "port?",
+      "username": "str?",
+      "password": "str?"
+    },
+    "streams": [
+      {
+        "url": "str",
+        "name": "str",
+        "username": "str?",
+        "password": "str?",
+        "verbosity": "int?"
+      }
+    ]
+  },
+  "ports": {
+    "5554/tcp": 5554
+  }
+}

@@ -3,7 +3,7 @@
     "armhf": "snowzach/doods:rpi",
     "armv7": "snowzach/doods:rpi",
     "aarch64": "snowzach/doods:aarch64",
-    "amd64": "snowzach/doods:amd64"
+    "amd64": "snowzach/doods:noavx"
   },
   "squash": false,
   "args": {}
