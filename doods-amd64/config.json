@@ -2,6 +2,7 @@
   "name": "DOODS-amd64",
   "version": "2",
   "slug": "doods-amd64",
+  "url": "https://github.com/snowzach/hassio-addons/tree/master/doods-amd64",
   "description": "Distributed Open Object Detection Service for AMD64 SSE4.2",
   "arch": [
     "armhf",
