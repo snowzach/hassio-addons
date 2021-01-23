@@ -1,8 +1,8 @@
 {
-  "name": "DOODS",
+  "name": "DOODS-cuda",
   "version": "2",
-  "slug": "doods",
-  "description": "Distributed Open Object Detection Service",
+  "slug": "doods-cuda",
+  "description": "Distributed Open Object Detection Service for x86_64 CUDA",
   "arch": [
     "armhf",
     "armv7",

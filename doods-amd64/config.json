@@ -28,6 +28,15 @@
         "numThreads": 1,
         "numConcurrent": 1,
         "hwAccel": false
+      },
+      {
+        "name": "tensorflow",
+        "type": "tensorflow",
+        "modelFile": "/opt/doods/models/faster_rcnn_inception_v2_coco_2018_01_28.pb",
+        "labelFile": "/opt/doods/models/coco_labels1.txt",
+        "numThreads": 1,
+        "numConcurrent": 1,
+        "hwAccel": false
       }
     ]
   },

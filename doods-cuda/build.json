@@ -3,7 +3,7 @@
     "armhf": "snowzach/doods:arm32",
     "armv7": "snowzach/doods:arm32",
     "aarch64": "snowzach/doods:arm64",
-    "amd64": "snowzach/doods:noavx"
+    "amd64": "snowzach/doods:cuda"
   },
   "squash": false,
   "args": {}

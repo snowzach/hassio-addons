@@ -28,7 +28,7 @@ For example:
       "hwAccel": false
     },
     {
-      "name": "inception",
+      "name": "tensorflow",
       "type": "tensorflow",
       "modelFile": "/share/doods/faster_rcnn_inception_v2_coco_2018_01_28.pb",
       "labelFile": "/share/doods/coco_labels1.txt",
