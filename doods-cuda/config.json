@@ -2,6 +2,7 @@
   "name": "DOODS-cuda",
   "version": "2",
   "slug": "doods-cuda",
+  "url": "https://github.com/snowzach/hassio-addons/tree/master/doods-cuda",
   "description": "Distributed Open Object Detection Service for x86_64 CUDA",
   "arch": [
     "armhf",
