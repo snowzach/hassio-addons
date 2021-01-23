@@ -2,6 +2,7 @@
   "name": "RTS2P",
   "version": "1",
   "slug": "rts2p",
+  "url": "https://github.com/snowzach/hassio-addons/tree/master/rts2p",
   "description": "RTSP Proxy Server",
   "arch": [
     "armhf",
