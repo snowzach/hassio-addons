@@ -10,11 +10,9 @@
     "aarch64",
     "amd64"
   ],
-  "startup": "before",
-  "boot": "auto",
-  "map": [
-    "share"
-  ],
+  "startup": "services",
+  "map": ["share"],
+  "usb": true,
   "options": {
     "server": {
       "port": "8080"
@@ -61,7 +59,7 @@
   "ports": {
     "8080/tcp": 8080
   },
-  "devices": [
-    "/dev/bus/usb:/dev/bus/usb:rwm"
-  ]
+  "ports_description": {
+    "8080/tcp": "DOODS port"
+  }
 }
