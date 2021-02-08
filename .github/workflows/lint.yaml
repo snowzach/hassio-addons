@@ -1,0 +1,16 @@
+name: Lint
+on: [push, pull_request]
+jobs:
+  build:
+    name: Lint add-on configuration of ${{ matrix.addon }}
+    runs-on: ubuntu-latest
+    strategy:
+       matrix:
+         addon: [doods-amd64, doods-cuda, doods, rts2p]
+    steps:
+      - name: ⤵️ Check out code from GitHub
+        uses: actions/checkout@v2
+      - name: 🚀 Run Home Assistant Add-on Linter on ${{ matrix.addon }}
+        uses: frenck/action-addon-linter@v2
+        with:
+          path: "./${{ matrix.addon }}"
