@@ -4,5 +4,7 @@
     "armv7": "snowzach/rts2p:rpi",
     "aarch64": "snowzach/rts2p:aarch64",
     "amd64": "snowzach/rts2p:amd64"
-  }
+  },
+  "squash": false,
+  "args": {}
 }

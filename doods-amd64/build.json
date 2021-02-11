@@ -4,5 +4,7 @@
     "armv7": "snowzach/doods:arm32",
     "aarch64": "snowzach/doods:arm64",
     "amd64": "snowzach/doods:amd64"
-  }
+  },
+  "squash": false,
+  "args": {}
 }
