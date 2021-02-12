@@ -3,7 +3,7 @@
   "version": "2",
   "slug": "doods-noavx",
   "url": "https://github.com/snowzach/hassio-addons/tree/master/doods-noavx",
-  "description": "Distributed Open Object Detection Service for AMD64 SSE4.2",
+  "description": "Distributed Open Object Detection Service for AMD64 without AVX",
   "arch": [
     "armhf",
     "armv7",
