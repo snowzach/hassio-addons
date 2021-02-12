@@ -2,7 +2,7 @@
 
 See https://github.com/snowzach/doods for more documentation.
 
-This image supports AMD64 CPU's with SSE4.2 instructions
+This image supports AMD64 CPU's without SSE4.2 instructions
 
 
 ### Models
