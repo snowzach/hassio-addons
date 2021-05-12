@@ -9,7 +9,7 @@ jobs:
          addon: [doods-amd64, doods-cuda, doods, rts2p]
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: 🚀 Run Home Assistant Add-on Linter on ${{ matrix.addon }}
         uses: frenck/action-addon-linter@v2
         with:
