@@ -10,11 +10,8 @@
     "aarch64",
     "amd64"
   ],
-  "startup": "before",
-  "boot": "auto",
-  "map": [
-    "share"
-  ],
+  "startup": "services",
+  "map": ["share"],
   "options": {
     "server": {
       "port": "5554",
@@ -46,5 +43,8 @@
   },
   "ports": {
     "5554/tcp": 5554
+  },
+  "ports_description": {
+    "5554/tcp": "RTS2P Proxy Port"
   }
 }

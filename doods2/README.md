@@ -14,8 +14,11 @@ For example:
 
 ```
 {
+  "logger": {
+    "level": "info"
+  },
   "server": {
-    "port": "8080"
+    "port": "8080",
   },
   "doods.detectors": [
     {
@@ -23,8 +26,6 @@ For example:
       "type": "tflite",
       "modelFile": "/opt/doods/models/coco_ssd_mobilenet_v1_1.0_quant.tflite",
       "labelFile": "/opt/doods/models/coco_labels0.txt",
-      "numThreads": 1,
-      "numConcurrent": 1,
       "hwAccel": false
     },
     {
@@ -32,8 +33,6 @@ For example:
       "type": "tensorflow",
       "modelFile": "/share/doods/faster_rcnn_inception_v2_coco_2018_01_28.pb",
       "labelFile": "/share/doods/coco_labels1.txt",
-      "numThreads": 1,
-      "numConcurrent": 1,
       "hwAccel": false
     }
   ]

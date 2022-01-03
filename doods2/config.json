@@ -1,6 +1,6 @@
 {
   "name": "DOODS2",
-  "version": "2",
+  "version": "1",
   "slug": "doods2",
   "url": "https://github.com/snowzach/hassio-addons/tree/master/doods2",
   "description": "Distributed Open Object Detection Service - V2",
@@ -10,16 +10,17 @@
     "aarch64",
     "amd64"
   ],
-  "startup": "before",
-  "boot": "auto",
-  "map": [
-    "share"
-  ],
+  "startup": "services",
+  "map": ["share"],
+  "usb": true,
   "options": {
-    "server": {
-      "port": "8080"
+    "logger": {
+      "level": "info"
     },
-    "auth_key": "",
+    "server": {
+      "port": "8080",
+      "auth_key": ""
+    },
     "doods.detectors": [
       {
         "name": "default",
@@ -38,8 +39,12 @@
     ]
   },
   "schema": {
+    "logger": {
+      "level": "str?"
+    },
     "server": {
-      "port": "port?"
+      "port": "port?",
+      "auth_key": "str?"
     },
     "doods.detectors": [
       {
@@ -49,13 +54,13 @@
         "labelFile": "str?",
         "hwAccel": "bool?"
       }
-    ],
-    "auth_key": "str?"
+    ]
   },
   "ports": {
     "8080/tcp": 8080
   },
-  "devices": [
-    "/dev/bus/usb:/dev/bus/usb:rwm"
-  ]
+  "ports_description": {
+    "8080/tcp": "DOODS2 port"
+  }
 }
+
