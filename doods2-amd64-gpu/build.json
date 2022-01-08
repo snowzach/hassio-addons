@@ -1,0 +1,5 @@
+{
+  "build_from": {
+    "amd64": "snowzach/doods2:amd64-gpu"
+  }
+}

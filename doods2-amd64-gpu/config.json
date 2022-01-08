@@ -1,7 +1,7 @@
 {
   "name": "DOODS2-gpu",
   "version": "1",
-  "slug": "doods2-gpu",
+  "slug": "doods2-amd64-gpu",
   "url": "https://github.com/snowzach/hassio-addons/tree/master/doods2",
   "description": "DOODS V1 Object Detection API - NVidia GPU/CUDA Support",
   "arch": [

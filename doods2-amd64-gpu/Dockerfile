@@ -1,2 +1,2 @@
-FROM snowzach/doods2:gpu
+FROM snowzach/doods2:amd64-gpu
 CMD ["-c", "/data/options.json", "api"]
