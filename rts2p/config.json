@@ -16,7 +16,8 @@
     "server": {
       "port": "5554",
       "username": "myusername",
-      "password": "mypassword"
+      "password": "mypassword",
+      "http_port": "8080"
     },
     "streams": [
       {
@@ -28,12 +29,14 @@
   "schema": {
     "server": {
       "port": "port?",
+      "http_port": "port?",
       "username": "str?",
       "password": "str?"
     },
     "streams": [
       {
         "url": "str",
+        "still": "str",
         "name": "str",
         "username": "str?",
         "password": "str?",
@@ -42,9 +45,11 @@
     ]
   },
   "ports": {
-    "5554/tcp": 5554
+    "5554/tcp": 5554,
+    "8080/tcp": 8080
   },
   "ports_description": {
-    "5554/tcp": "RTS2P Proxy Port"
+    "5554/tcp": "RTS2P Proxy Port",
+    "8080/tcp": "RTS2P HTTP Port"
   }
 }
