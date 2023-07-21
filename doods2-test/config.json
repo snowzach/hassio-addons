@@ -1,9 +1,9 @@
 {
-  "name": "DOODS2",
+  "name": "DOODS2-test",
   "version": "1",
-  "slug": "doods2",
-  "url": "https://github.com/snowzach/hassio-addons/tree/master/doods2",
-  "description": "DOODS V1 Object Detection API - Common Compute Support",
+  "slug": "doods2-test",
+  "url": "https://github.com/snowzach/hassio-addons/tree/master/doods2-test",
+  "description": "DOODS V1 Object Detection API - TEST",
   "webui": "http://[HOST]:[PORT:8080]",
   "arch": [
     "armhf",
@@ -47,15 +47,17 @@
       "port": "port?",
       "auth_key": "str?"
     },
-    "doods.detectors": [
-      {
-        "name": "str",
-        "type": "str",
-        "modelFile": "str",
-        "labelFile": "str?",
-        "hwAccel": "bool?"
-      }
-    ]
+    "doods": {
+      "detectors": [
+        {
+          "name": "str",
+          "type": "str",
+          "modelFile": "str",
+          "labelFile": "str?",
+          "hwAccel": "bool?"
+        }
+      ]
+    }
   },
   "ports": {
     "8080/tcp": 8080
