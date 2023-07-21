@@ -3,7 +3,7 @@
   "version": "1",
   "slug": "doods2-amd64",
   "url": "https://github.com/snowzach/hassio-addons/tree/master/doods2",
-  "description": "DOODS V1 Object Detection API - Modern AMD64 Chipsets with AVX instructions.",
+  "description": "DOODS V1 Object Detection API - Modern AMD64 Chipsets with stuff.",
   "arch": [
     "amd64"
   ],
