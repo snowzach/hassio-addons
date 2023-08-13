@@ -3,6 +3,7 @@ version: '1'
 slug: doods2
 url: https://github.com/snowzach/hassio-addons/tree/master/doods2
 description: DOODS V1 Object Detection API - Common Compute Support
+webui: http://[HOST]:[PORT:8080]
 arch:
 - armhf
 - armv7
@@ -39,16 +40,17 @@ options:
     fontColor: "#ffff00"
     fontThickness: 1
   doods.detectors:
-  - name: default
-    type: tflite
-    modelFile: "/opt/doods/models/coco_ssd_mobilenet_v1_1.0_quant.tflite"
-    labelFile: "/opt/doods/models/coco_labels0.txt"
-    hwAccel: false
-  - name: tensorflow
-    type: tensorflow
-    modelFile: "/opt/doods/models/faster_rcnn_inception_v2_coco_2018_01_28.pb"
-    labelFile: "/opt/doods/models/coco_labels1.txt"
-    hwAccel: false
+    - name: default
+      type: tflite
+      modelFile: models/coco_ssd_mobilenet_v1_1.0_quant.tflite
+      labelFile: models/coco_labels0.txt
+    - name: tensorflow
+      type: tensorflow
+      modelFile: models/faster_rcnn_inception_v2_coco_2018_01_28.pb
+      labelFile: models/coco_labels1.txt
+    - name: pytorch
+      type: pytorch
+      modelFile: ultralytics/yolov5,yolov5s
 schema:
   logger:
     level: str?
