@@ -21,22 +21,22 @@ options:
   doods.log: detections
   doods.boxes:
     enabled: true
-    boxColor: [0, 255, 0]
+    boxColor: "#00ff00"
     boxThickness: 1
     fontScale: 1.2
-    fontColor: [0, 255, 0]
+    fontColor: "#00ff00"
     fontThickness: 1
   doods.regions:
     enabled: true
-    boxColor: [255, 0, 255]
+    boxColor: "#ff00ff"
     boxThickness: 1
     fontScale: 1.2
-    fontColor: [255, 0, 255]
+    fontColor: "#ff00ff"
     fontThickness: 1
   doods.globals:
     enabled: true
     fontScale: 1.2
-    fontColor: [255, 255, 0]
+    fontColor: "#ffff00"
     fontThickness: 1
   doods.detectors:
   - name: default

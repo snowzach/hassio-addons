@@ -4,6 +4,7 @@
   "slug": "doods-cuda",
   "url": "https://github.com/snowzach/hassio-addons/tree/master/doods-cuda",
   "description": "Distributed Open Object Detection Service for x86_64 CUDA",
+  "webui": "http://[HOST]:[PORT:8080]",
   "arch": [
     "armhf",
     "armv7",
