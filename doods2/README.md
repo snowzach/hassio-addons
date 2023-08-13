@@ -13,41 +13,41 @@ Place your custom models in something like /share/doods and you can access them 
 For example:
 
 ```
-  logger:
-    level: info
-  server:
-    port: '8080'
-    auth_key: ''
-  doods.log: detections
-  doods.boxes:
-    enabled: true
-    boxColor: "#00ff00"
-    boxThickness: 1
-    fontScale: 1.2
-    fontColor: "#00ff00"
-    fontThickness: 1
-  doods.regions:
-    enabled: true
-    boxColor: "#ff00ff"
-    boxThickness: 1
-    fontScale: 1.2
-    fontColor: "#ff00ff"
-    fontThickness: 1
-  doods.globals:
-    enabled: true
-    fontScale: 1.2
-    fontColor: "#ffff00"
-    fontThickness: 1
-  doods.detectors:
-    - name: default
-      type: tflite
-      modelFile: models/coco_ssd_mobilenet_v1_1.0_quant.tflite
-      labelFile: models/coco_labels0.txt
-    - name: tensorflow
-      type: tensorflow
-      modelFile: models/faster_rcnn_inception_v2_coco_2018_01_28.pb
-      labelFile: models/coco_labels1.txt
-    - name: pytorch
-      type: pytorch
-      modelFile: ultralytics/yolov5,yolov5s
+logger:
+  level: info
+server:
+  port: '8080'
+  auth_key: ''
+doods.log: detections
+doods.boxes:
+  enabled: true
+  boxColor: "#00ff00"
+  boxThickness: 1
+  fontScale: 1.2
+  fontColor: "#00ff00"
+  fontThickness: 1
+doods.regions:
+  enabled: true
+  boxColor: "#ff00ff"
+  boxThickness: 1
+  fontScale: 1.2
+  fontColor: "#ff00ff"
+  fontThickness: 1
+doods.globals:
+  enabled: true
+  fontScale: 1.2
+  fontColor: "#ffff00"
+  fontThickness: 1
+doods.detectors:
+  - name: default
+    type: tflite
+    modelFile: models/coco_ssd_mobilenet_v1_1.0_quant.tflite
+    labelFile: models/coco_labels0.txt
+  - name: tensorflow
+    type: tensorflow
+    modelFile: models/faster_rcnn_inception_v2_coco_2018_01_28.pb
+    labelFile: models/coco_labels1.txt
+  - name: pytorch
+    type: pytorch
+    modelFile: ultralytics/yolov5,yolov5s
 ```

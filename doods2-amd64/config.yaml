@@ -1,13 +1,10 @@
-name: DOODS2
+name: DOODS2-amd64
 version: '1'
-slug: doods2
+slug: doods2-amd64
 url: https://github.com/snowzach/hassio-addons/tree/master/doods2
-description: DOODS V2 Object Detection API - Common Compute Support
+description: DOODS V2 Object Detection API - Modern AMD64 Chipsets with AVX instructions.
 webui: http://[HOST]:[PORT:8080]
 arch:
-- armhf
-- armv7
-- aarch64
 - amd64
 startup: services
 map:
