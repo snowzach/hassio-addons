@@ -5,6 +5,7 @@ url: https://github.com/snowzach/hassio-addons/tree/master/doods2
 description: DOODS V2 Object Detection API - Common Compute Support
 webui: http://[HOST]:[PORT:8080]
 arch:
+- armhf
 - armv7
 - aarch64
 - amd64
