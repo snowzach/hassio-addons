@@ -96,4 +96,4 @@ ports:
   8080/tcp: 8080
 ports_description:
   8080/tcp: DOODS2 port
-image: "ghcr.io/snowzach/image-{arch}-doods2"
+image: "ghcr.io/tux2000/image-{arch}-doods2"
