@@ -67,6 +67,7 @@ schema:
   server:
     port: port?
     auth_key: str?
+  doods.log: str?
   doods.boxes:
     enabled: bool
     boxColor: str
